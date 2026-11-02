@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <style>
+    .bg { fill: #171717; }
+    .fg { fill: #fafafa; }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #fafafa; }
+      .fg { fill: #171717; }
+    }
+  </style>
+  <rect class="bg" width="32" height="32" rx="16" fill="#171717"/>
+  <path class="fg" fill="#fafafa" d="M11.1 23.4V10.2h2.8v5.5c.8-1.5 2.1-2.3 3.8-2.3 3.1 0 4.8 2 4.8 5v5h-2.8v-4.6c0-1.7-.8-2.6-2.2-2.6-1.6 0-2.5 1.1-2.5 3v4.2h-2.9z"/>
+</svg>

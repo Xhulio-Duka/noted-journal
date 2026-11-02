@@ -23,7 +23,7 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
   const themeClass = theme === 'light' ? 'light' : theme === 'dark' ? 'dark' : undefined
 
   return (
-    <html lang="en" className={themeClass}>
+    <html lang="en" className={themeClass} suppressHydrationWarning>
       <body className="antialiased">
         <ThemeScript />
         {children}
