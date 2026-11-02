@@ -54,7 +54,7 @@ export default function SignInPage() {
           {error && <p role="alert" className="text-sm text-destructive">{error}</p>}
           <Button type="submit" disabled={pending}>{pending ? 'Working…' : mode === 'sign-in' ? 'Sign in' : 'Create account'}</Button>
         </form>
-        <button type="button" onClick={() => setMode(mode === 'sign-in' ? 'sign-up' : 'sign-in')} className="mt-5 text-sm text-muted-foreground underline underline-offset-4 hover:text-foreground">
+        <button type="button" onClick={() => { setMode(mode === 'sign-in' ? 'sign-up' : 'sign-in'); setError('') }} className="mt-5 text-sm text-muted-foreground underline underline-offset-4 hover:text-foreground">
           {mode === 'sign-in' ? 'Need an account? Create one' : 'Already registered? Sign in'}
         </button>
       </div>
